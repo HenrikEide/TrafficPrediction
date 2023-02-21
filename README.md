@@ -1,5 +1,5 @@
 # Traffic Prediction
 
-## INF265 project
+## INF367A project
 
 - Henrik
