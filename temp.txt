@@ -1,0 +1,16 @@
+Recap of thesis work thus far.
+
+Tentative title:
+Explainable AI for text classification. (Maybe LLM)
+
+Description:
+Apply and evaluate XAI methods to a LLM fine-tuned on text classification tasks. 
+
+If the explainee is a data scientist working on the model being explained, we may possibly provide methods for "closing the loop"; providing the scientist a way to influence the trained parameters of the model in the correct direction. Given an explaination that reveals inaccuracies in the model.
+
+
+Equinor project specifics:
+
+Equinor has fine-tuned a BERT_large model from Nasjonalbiblioteket AI Lab trained on Norwegian text. (https://huggingface.co/NbAiLab/nb-bert-large). 
+
+
