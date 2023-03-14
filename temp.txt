@@ -8,9 +8,7 @@ Apply and evaluate XAI methods to a LLM fine-tuned on text classification tasks.
 
 If the explainee is a data scientist working on the model being explained, we may possibly provide methods for "closing the loop"; providing the scientist a way to influence the trained parameters of the model in the correct direction. Given an explaination that reveals inaccuracies in the model.
 
-
 Equinor project specifics:
 
-Equinor has fine-tuned a BERT_large model from Nasjonalbiblioteket AI Lab trained on Norwegian text. (https://huggingface.co/NbAiLab/nb-bert-large). 
-
-
+Equinor has fine-tuned a BERT_large model from Nasjonalbiblioteket AI Lab trained on Norwegian text. (https://huggingface.co/NbAiLab/nb-bert-large). The model is used in a text classification task, for mainly two sets of classes. The documents are incident reports (notifications) from Equinor's platforms, describing a potential or urgent issue with some equipment, through both structured and free text fields. Equinor has trained the model to predict two seperate features of interest, "failure mode" and "failed part".  
+Failure mode refers to the nature of the problem, for example leakage or corrosion. There is a field in the notification form where this may be specified, but it is not an obligatory field, and it is missing in most of the data. There is about 40 different failure modes, the number has and could go further down as some modes are deemed too similar/overlapping. Failed part(s), as the name suggests, aims to predict which part or equipment the notification concerns. This tasks has considerably many more possible labels. 
